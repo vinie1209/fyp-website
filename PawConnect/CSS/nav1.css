@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #FDF39F; */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navcontainer {
+    background-color: #FFF0E4;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF0E4;
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+p {
+    color: #555;
+}
+
+.logo a {
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 769px) {
+    .toggle-btn {
+        display: none;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .toggle-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        background-color: #FFF0E4;
+        width: 100%;
+        top: 60px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .navbar .logo,
+    .navbar nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .logo a {
+        font-size: 24px;
+    }
+
+    .navbar .toggle-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+    }
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked+nav ul {
+    display: block;
+}
+
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #FFF0E4;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px 20px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+}

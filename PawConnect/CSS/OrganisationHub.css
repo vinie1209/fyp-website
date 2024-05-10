@@ -1,0 +1,93 @@
+.content {
+    /* padding: 0px 300px 0px 300px; */
+    background-color: #FFF0E4;
+}
+
+.content h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.content form {
+    text-align: right;
+}
+
+.org-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    /* margin: 15px 100px 0px 100px; */
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    display: flex;
+}
+
+.org-image {
+    flex: 0 0 100px;
+    /* Fixed width for image */
+    margin-right: 20px;
+}
+
+.org-image img {
+    border-radius: 5px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.org-details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.org-details h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.org-details p {
+    margin: 0;
+}
+
+.filter {
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@media only screen and (max-width: 800px) {
+    .org-card {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .filter {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+.org-buttons {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.org-buttons button {
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    /* Add margin bottom */
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.org-buttons button:hover {
+    background-color: #45a049;
+}
